@@ -6,6 +6,7 @@ import Home from '../pages/Home'
 import Catalog from '../pages/Catalog'
 import Cart from '../pages/Cart'
 import Product from '../pages/Product'
+import Accessories from '../pages/Accessories'
 
 const Routes = () => {
     return (
@@ -13,6 +14,7 @@ const Routes = () => {
             <Route path='/' exact component={Home}/>
             <Route path='/catalog/:slug' component={Product}/>
             <Route path='/catalog' component={Catalog}/>
+            <Route path='/accessories' component={Accessories}/>
             <Route path='/cart' component={Cart}/>
         </Switch>
     )
